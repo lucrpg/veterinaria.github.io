@@ -1,0 +1,39 @@
+<form action="guardar_control.php" method="POST">
+    <label for="mascota_id">ID de la Mascota:</label>
+    <input type="number" id="mascota_id" name="mascota_id" required><br><br>
+
+    <label for="dueno_id">ID del Dueño:</label>
+    <input type="hidden" name="dueno_id" value="<?php echo htmlspecialchars($_GET['dueno_id']); ?>"> <!-- Campo oculto para el ID del dueño -->
+
+    <label for="vacunas">Vacunas:</label>
+    <input type="text" id="vacunas" name="vacunas" required><br><br>
+
+    <label for="dosis_vacuna">Dosis de Vacuna:</label>
+    <input type="text" id="dosis_vacuna" name="dosis_vacuna" required><br><br>
+
+    <label for="fecha_vacuna">Fecha de Vacuna:</label>
+    <input type="date" id="fecha_vacuna" name="fecha_vacuna" required><br><br>
+
+    <label for="antiparasitos">Antiparasitos:</label>
+    <input type="text" id="antiparasitos" name="antiparasitos" required><br><br>
+
+    <label for="dosis_antiparasitos">Dosis de Antiparasitos:</label>
+    <input type="text" id="dosis_antiparasitos" name="dosis_antiparasitos" required><br><br>
+
+    <label for="fecha_antiparasito">Fecha de Antiparasito:</label>
+    <input type="date" id="fecha_antiparasito" name="fecha_antiparasito" required><br><br>
+
+    <label for="peso">Peso:</label>
+    <input type="number" id="peso" name="peso" step="0.01" required><br><br>
+
+    <label for="fecha_peso">Fecha de Peso:</label>
+    <input type="date" id="fecha_peso" name="fecha_peso" required><br><br>
+
+    <label for="observaciones">Observaciones:</label><br>
+    <textarea id="observaciones" name="observaciones" rows="4" cols="50"></textarea><br><br>
+
+    <label for="proxima_visita">Próxima Visita:</label>
+    <input type="date" id="proxima_visita" name="proxima_visita" required><br><br>
+
+    <input type="submit" value="Guardar Control">
+</form>

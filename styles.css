@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.menu-icon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.menu-icon img {
+    width: 100%;
+    height: auto;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #A0522D;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.sidebar.active {
+    display: flex;
+}
+
+.close-icon {
+    font-size: 24px;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.user-profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.user-profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.user-profile p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.pet-list {
+    list-style-type: none;
+}
+
+.pet-list li {
+    margin-bottom: 15px;
+}
+
+.pet-list img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.add-pet {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.main-content {
+    margin-left: 60px;
+    padding: 20px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.search-bar button {
+    background-color: #A0522D;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    border-radius: 10px;
+}

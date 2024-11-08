@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Veterinario</title>
+</head>
+<body>
+    <h2>Registro de Veterinario</h2>
+    <form action="guardar_veterinario.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" required><br><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required><br><br>
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni" required><br><br>
+
+        <label for="especializacion">Especialización:</label>
+        <input type="text" id="especializacion" name="especializacion" required><br><br>
+
+        <label for="horario_de_trabajo">Horario de trabajo:</label>
+        <input type="text" id="horario_de_trabajo" name="horario_de_trabajo" required><br><br>
+
+        <input type="submit" value="Registrar Veterinario">
+    </form>
+</body>
+</html>

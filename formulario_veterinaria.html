@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Datos de la Veterinaria</title>
+</head>
+<body>
+    <h2>Formulario Datos de la Veterinaria</h2>
+    <form action="guardar_datos_veterinaria.php" method="POST">
+        <label for="clinica">Nombre de la Clínica:</label>
+        <input type="text" id="clinica" name="clinica" required><br><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required><br><br>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="dueño">dueño:</label>
+        <input type="text" id="dueño" name="dueño" required><br><br>
+
+        <input type="submit" value="Guardar Datos">
+    </form>
+</body>
+</html>

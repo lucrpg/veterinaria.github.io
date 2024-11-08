@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Pet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Icono del menú hamburguesa -->
+    <div class="menu-icon" onclick="toggleSidebar()">
+        <img src="menu-icon.png" alt="Menú">
+    </div>
+
+    <!-- Barra lateral (oculta inicialmente) -->
+    <aside id="sidebar" class="sidebar">
+        <!-- Flecha para cerrar el menú -->
+        <div class="close-icon" onclick="toggleSidebar()">
+            ←
+        </div>
+
+        <!-- Enlace al perfil de usuario -->
+        <a href="perfil_usuario.php">
+            <div class="user-profile">
+                <img src="user-profile.jpg" alt="Perfil de Usuario">
+                <p>Usuario</p>
+            </div>
+        </a>
+        
+        <ul class="pet-list">
+            <li><img src="dog1.jpg" alt="Mascota 1"></li>
+            <li><img src="dog2.jpg" alt="Mascota 2"></li>
+            <li><img src="cat1.jpg" alt="Mascota 3"></li>
+            <li><button class="add-pet">+</button></li>
+        </ul>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar veterinarias...">
+            <button>🔍</button>
+        </div>
+        <div class="map-container">
+            <!-- Aquí podrías integrar un mapa interactivo, como Google Maps -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.0554828347464!2d-122.08424968469167!3d37.42199977982156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5a6c1aaaba5%3A0x5a8b2935c8d60d77!2sGoogleplex!5e0!3m2!1ses!2s!4v1622578083924!5m2!1ses!2s" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
